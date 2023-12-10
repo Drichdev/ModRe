@@ -1,0 +1,129 @@
+:root{
+    --bg-pri: rgb(255, 255, 129);
+    --blanc: white; 
+    --orange: rgb(255, 136, 0);
+    --gris: rgb(163, 163, 163);
+    --bar:rgb(65, 64, 64);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+header .top{
+    height: 100px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+header .top .top-left img{
+    margin: 0 40px;
+}
+header .top .top-right{
+    background: var(--orange);
+    padding: 30px 210px;
+}
+header .bottom{
+    max-width: 100%;
+    height: 70px;
+
+}
+header .bottom ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .bottom ul li{
+    margin-left: 70px;
+    background: var(--bg-pri);
+    padding: 15px 20px 10px 20px;
+    border-radius: 25px 25px 0 0;
+    border: 1px solid black;
+}
+
+main{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+main .one{
+    width: 300px;
+    background: var(--orange);
+    padding: 10px;
+}
+
+main .one .one-txt h4{
+    text-align: center;
+    background: var(--blanc);
+}
+
+main .one .one-txt p{
+    text-justify: auto;
+}
+
+main .middle{
+    width: 600px;
+    background: var(--bg-pri);
+    margin: 0 40px;
+    padding: 15px;
+}
+.middle img{
+    float: right;
+    margin: 20px;
+}
+.middle p{
+    text-justify: auto;
+}
+
+main .last{
+    width: 300px;
+    background: var(--orange);
+    padding: 10px;
+}
+
+main .last .last-txt{
+    overflow-y: scroll;
+    height: 250px;
+    scrollbar-color: #346abf var(--gris); /* ascensseur bleu sur fond blanc */
+    scrollbar-width: 5px;
+    background: var(--gris);
+    padding: 10px;
+}
+
+main .last .last-txt h4{
+    text-align: center;
+}
+
+.carre{
+    display: flex;
+    justify-content: center;
+}
+.car{
+    height: 100px;
+    width: 90px;
+    border: 5px solid black;
+}
+
+.car:nth-child(2){
+    margin: 0 30px;
+}
+
+.bar{
+    background: red;
+    height: 15px;
+    width: 100%;
+}
+
+.bar-hr{
+    max-width: 300px;
+    height: 1px;
+    background: var(--bar) ;
+    margin: 5px 0;
+}
